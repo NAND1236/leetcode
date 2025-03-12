@@ -1,0 +1,6 @@
+class Solution(object):
+    def countNegatives(self, grid):
+        c=[i for item in grid for i in item]
+        d=[i for i in c if i<0]
+        return len(d)
+        
