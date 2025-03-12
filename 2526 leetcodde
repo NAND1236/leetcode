@@ -1,0 +1,8 @@
+class Solution(object):
+    def maximumCount(self, nums):
+        c=[i for i in nums if i<0]
+        d=[i for i in nums if i>0]
+        if len(c)>len(d):
+            return len(c) 
+        else:
+            return len(d)
